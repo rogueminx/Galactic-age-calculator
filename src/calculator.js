@@ -47,4 +47,8 @@ export class Calculator{
     return marsYears;
   }
 
+  jupiterAge() {
+    return 0;
+  }
+
 } //Calculator

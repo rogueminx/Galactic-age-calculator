@@ -46,4 +46,10 @@ describe('calculator', function() {
     var marsAge = person.marsAge();
     expect(marsAge).toEqual(71.44);
   });
+
+  it('returns age in Jupiter years', function() {
+    person.findAge();
+    var jupiterAge = person.jupiterAge();
+    expect(jupiterAge).toEqual(450.68);
+  });
 }); // describe calculator
