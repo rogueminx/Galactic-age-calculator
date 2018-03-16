@@ -22,4 +22,10 @@ describe('calculator', function() {
     var age = person.findAge();
     expect(person.toSeconds()).toEqual(1198368000);
   });
+
+  it('returns age in seconds from current date', function() {
+    var age = person.findAge();
+    var secondsAge = person.toSeconds();
+    expect(person.ageInSeconds()).toBeGreaterThan(1198368000);
+  });
 }); // describe calculator

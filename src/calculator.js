@@ -3,32 +3,33 @@ export class Calculator{
     this.birthDate = birthDate;
     this.gender = gender;
     this.origin = origin;
+    this.currentDate = 0;
+    this.birthDateInSeconds = 0;
     this.age = 0;
   }
 
   findAge() {
-    var currentDate = new Date();
-    var currentYear = currentDate.getFullYear();
-    var birthdate = new Date(this.birthDate);
-    var birthYear = birthdate.getFullYear();
-    var age = (currentYear - birthYear);
+    let currentDate = new Date();
+    this.currentDate = currentDate
+    let currentYear = currentDate.getFullYear();
+    let birthdate = new Date(this.birthDate);
+    this.birthDateInSeconds = birthdate;
+    let birthYear = birthdate.getFullYear();
+    let age = (currentYear - birthYear);
     this.age = age
     return this.age;
   }
 
   toSeconds() {
-    var seconds =  (this.age * 365 * 24 * 60 * 60);
-    return seconds;
+    let birthSeconds =  (this.age * 365 * 24 * 60 * 60);
+    return birthSeconds;
   }
 
-  subtractDates(currentDate, birthDate) {
-    var dateArray = currentDate.split("/")
-      dateArray.forEach(function(num){
-        parseInt(num);
-      })
-
-    // .join(",");
-    return dateArray;
+  differenceInSeconds() {
+    let date = this.currentDate;
+    let birthday = this.birthDateInSeconds;
+    difference = Math.floor((date - birthday)/1000);
+    return difference;
   }
 
 } //Calculator
