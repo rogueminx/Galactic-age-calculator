@@ -19,18 +19,25 @@ describe('calculator', function() {
   });
 
   it('returns age in seconds', function() {
-    var age = person.findAge();
+    person.findAge();
     expect(person.toSeconds()).toEqual(1198368000);
   });
 
   it('returns age in seconds from current date', function() {
-    var age = person.findAge();
-    var secondsAge = person.toSeconds();
+    person.findAge();
+    person.toSeconds();
     expect(person.ageInSeconds()).toBeGreaterThan(1198368000);
   });
 
   it('returns age in Mercury years', function() {
+    person.findAge();
     var mercuryAge = person.mercuryAge();
     expect(mercuryAge).toEqual(9.12);
+  });
+
+  it('returns age in Venus years', function() {
+    person.findAge();
+    var venusAge = person.venusAge();
+    expect(venusAge).toEqual(23.56);
   });
 }); // describe calculator

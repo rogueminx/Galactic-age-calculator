@@ -33,6 +33,11 @@ export class Calculator{
   }
 
   mercuryAge() {
+    let mercuryYears = this.age * .24;
+    return mercuryYears;
+  }
+
+  venusAge() {
 
   }
 
