@@ -101,7 +101,8 @@ export class Calculator{
   }
 
   jupiterYears(){
-    return 0;
+    let jupiterYears = Math.floor(this.yearsLeft * 11.86) ;
+    return jupiterYears;
   }
 
 } //Calculator
