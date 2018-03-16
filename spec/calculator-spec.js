@@ -81,4 +81,12 @@ describe('calculator', function() {
     person.earthLifeLeft();
     expect(person.jupiterYears()).toEqual(533);
   });
+
+  it('returns the number of years you have lived past the average life epectancy.', function() {
+    var oldPerson = new Calculator('03/15/1912', 'female', 'Europe')
+    var oldAge = oldPerson.findAge();
+    expect(oldAge).toEqual(106);
+    var yearsLeft = oldPerson.earthLifeLeft();
+    expect(yearsLeft).toEqual(23);
+  });
 }); // describe calculator

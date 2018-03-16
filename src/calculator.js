@@ -6,7 +6,8 @@ export class Calculator{
     this.currentDate = 0;
     this.birthDateInSeconds = 0;
     this.age = 0;
-    this.yearsLeft =0;
+    this.yearsLeft = 0;
+    this.extraYears = 0;
   }
 
   findAge() {
@@ -56,32 +57,60 @@ export class Calculator{
   earthLifeLeft() {
     if ((this.gender === "female") && (this.origin === 'Europe' || this.origin === 'North America' || this.origin === 'Australia')) {
       let averageLife = 83;
-      this.yearsLeft = averageLife - this.age;
-      return this.yearsLeft;
+      let difference = averageLife - this.age;
+        if (difference < 0) {
+          this.extraYears = Math.abs(difference);
+          return this.extraYears;
+        } else this.yearsLeft = difference;
+          return this.yearsLeft;
     } else if ((this.gender === "male") && (this.origin === 'Europe' || this.origin === 'North America' || this.origin === 'Australia')){
       let averageLife = 79;
-      this.yearsLeft = averageLife - this.age;
-      return this.yearsLeft;
+      let difference = averageLife - this.age;
+        if (difference < 0) {
+          this.extraYears = Math.abs(difference);
+          return this.extraYears;
+        } else this.yearsLeft = difference;
+          return this.yearsLeft;
     } else if ((this.gender === "female") && (this.origin === 'South America' || this.origin === 'Asia')){
       let averageLife = 74;
-      this.yearsLeft = averageLife - this.age;
-      return this.yearsLeft;
+      let difference = averageLife - this.age;
+        if (difference < 0) {
+          this.extraYears = Math.abs(difference);
+          return this.extraYears;
+        } else this.yearsLeft = difference;
+          return this.yearsLeft;
     } else if ((this.gender === "male") && (this.origin === 'South America' || this.origin === 'Asia')){
       let averageLife = 70;
-      this.yearsLeft = averageLife - this.age;
-      return this.yearsLeft;
+      let difference = averageLife - this.age;
+        if (difference < 0) {
+          this.extraYears = Math.abs(difference);
+          return this.extraYears;
+        } else this.yearsLeft = difference;
+          return this.yearsLeft;
     } else if ((this.gender === "female") && (this.origin === 'Africa')){
       let averageLife = 65;
-      this.yearsLeft = averageLife - this.age;
-      return this.yearsLeft;
+      let difference = averageLife - this.age;
+        if (difference < 0) {
+          this.extraYears = Math.abs(difference);
+          return this.extraYears;
+        } else this.yearsLeft = difference;
+          return this.yearsLeft;
     } else if ((this.gender === "male") && (this.origin === 'Africa')){
       let averageLife = 61;
-      this.yearsLeft = averageLife - this.age;
-      return this.yearsLeft;
+      let difference = averageLife - this.age;
+        if (difference < 0) {
+          this.extraYears = Math.abs(difference);
+          return this.extraYears;
+        } else this.yearsLeft = difference;
+          return this.yearsLeft;
     } else {
       let averageLife = 72;
-      this.yearsLeft = averageLife - this.age;
-      return this.yearsLeft;
+      let difference = averageLife - this.age;
+        if (difference < 0) {
+          this.extraYears = Math.abs(difference);
+          return this.extraYears;
+        } else this.yearsLeft = difference;
+          return this.yearsLeft;
     }
   }
 
