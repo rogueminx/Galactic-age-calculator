@@ -50,6 +50,6 @@ describe('calculator', function() {
   it('returns age in Jupiter years', function() {
     person.findAge();
     var jupiterAge = person.jupiterAge();
-    expect(jupiterAge).toEqual(450.68);
+    expect(jupiterAge).toEqual(450);
   });
 }); // describe calculator

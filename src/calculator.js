@@ -48,7 +48,8 @@ export class Calculator{
   }
 
   jupiterAge() {
-    return 0;
+    let jupiterYears = Math.floor(this.age * 11.86);
+    return jupiterYears;
   }
 
 } //Calculator
