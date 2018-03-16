@@ -7,16 +7,26 @@ export class Calculator{
   }
 
   findAge() {
-    
+    var currentDate = new Date();
+    var currentYear = currentDate.getFullYear();
+    var birthdate = new Date(this.birthDate);
+    var birthYear = birthdate.getFullYear();
+    var age = (currentYear - birthYear);
+    return age;
   }
 
   toSeconds() {
     var seconds =  (this.age * 365 * 24 * 60 * 60);
     return seconds;
-  } // toSeconds
+  }
 
   subtractDates(currentDate, birthDate) {
-    var dateArray = currentDate.split("/");
+    var dateArray = currentDate.split("/")
+      dateArray.forEach(function(num){
+        parseInt(num);
+      })
+
+    // .join(",");
     return dateArray;
   }
 

@@ -14,13 +14,12 @@ describe('calculator', function() {
   });
 
   it('returns age', function() {
-    var age = age.findAge();
-    expect(age).toEqual(37)
+    var age = person.findAge();
+    expect(age).toEqual(38)
   });
 
-  // TEST 2
     // it('returns the exact age for an entered birth date', function() {
-    //   var difference = age.subtractDates("03/16/17", "03/16/80");
+    //   var difference = person.subtractDates("03/16/17", "03/16/80");
     //   expect(difference).toEqual(1)
     // });
 }); // describe calculator
