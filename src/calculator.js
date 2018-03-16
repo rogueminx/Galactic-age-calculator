@@ -6,6 +6,10 @@ export class Calculator{
     this.age = 0;
   }
 
+  findAge() {
+    
+  }
+
   toSeconds() {
     var seconds =  (this.age * 365 * 24 * 60 * 60);
     return seconds;
