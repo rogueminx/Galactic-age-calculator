@@ -70,4 +70,10 @@ describe('calculator', function() {
     expect(person.venusYears()).toEqual(27);
   });
 
+  it('returns Mars years left', function() {
+    person.findAge();
+    person.earthLifeLeft();
+    expect(person.marsYears()).toEqual(84);
+  });
+
 }); // describe calculator
