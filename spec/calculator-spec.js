@@ -32,19 +32,19 @@ describe('calculator', function() {
   it('returns age in Mercury years', function() {
     person.findAge();
     var mercuryAge = person.mercuryAge();
-    expect(mercuryAge).toEqual(9.12);
+    expect(mercuryAge).toEqual(9);
   });
 
   it('returns age in Venus years', function() {
     person.findAge();
     var venusAge = person.venusAge();
-    expect(venusAge).toEqual(23.56);
+    expect(venusAge).toEqual(23);
   });
 
   it('returns age in Mars years', function() {
     person.findAge();
     var marsAge = person.marsAge();
-    expect(marsAge).toEqual(71.44);
+    expect(marsAge).toEqual(71);
   });
 
   it('returns age in Jupiter years', function() {
@@ -61,7 +61,7 @@ describe('calculator', function() {
   it('returns Mercury years left', function() {
     person.findAge();
     person.earthLifeLeft();
-    expect(person.mercuryYears()).toEqual(10.8);
+    expect(person.mercuryYears()).toEqual(10);
   });
 
 }); // describe calculator

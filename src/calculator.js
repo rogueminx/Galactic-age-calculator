@@ -34,17 +34,17 @@ export class Calculator{
   }
 
   mercuryAge() {
-    let mercuryYears = this.age * .24;
+    let mercuryYears = Math.floor(this.age * .24);
     return mercuryYears;
   }
 
   venusAge() {
-    let venusYears = this.age * .62;
+    let venusYears = Math.floor(this.age * .62);
     return venusYears;
   }
 
   marsAge() {
-    let marsYears = this.age * 1.88;
+    let marsYears = Math.floor(this.age * 1.88);
     return marsYears;
   }
 
@@ -86,7 +86,8 @@ export class Calculator{
   }
 
   mercuryYears(){
-    return 0;
+    let mercYears = Math.floor(this.yearsLeft * .24) ;
+    return mercYears;
   }
 
 } //Calculator
