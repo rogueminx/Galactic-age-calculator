@@ -4,13 +4,13 @@ describe('calculator', function() {
   var person;
 
   beforeEach(function() {
-    person = new Calculator('03/15/1980', 'female', 'USA');
+    person = new Calculator('03/15/1980', 'female', 'Europe');
   });
 
   it('creates a new instance to Calulate', function() {
     expect(person.birthDate).toEqual('03/15/1980');
     expect(person.gender).toEqual('female');
-    expect(person.origin).toEqual('USA');
+    expect(person.origin).toEqual('Europe');
   });
 
   it('returns age in years', function() {
@@ -55,7 +55,7 @@ describe('calculator', function() {
 
   it('returns the average age youhave left on plant Earth.', function() {
     person.findAge();
-    expect(person.earthLifeLeft()).toEqual(43);
+    expect(person.earthLifeLeft()).toEqual(45);
   });
 
 }); // describe calculator

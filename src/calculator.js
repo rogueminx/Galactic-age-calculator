@@ -53,7 +53,28 @@ export class Calculator{
   }
 
   earthLifeLeft() {
-    return 0;
+    if ((this.gender === "female") && (this.origin === 'Europe' || this.origin === 'North America' || this.origin === 'Australia')) {
+      let averageLife = 83;
+      return averageLife - this.age;
+    } else if ((this.gender === "male") && (this.origin === 'Europe' || this.origin === 'North America' || this.origin === 'Australia')){
+      let averageLife = 79;
+      return averageLife - this.age;
+    } else if ((this.gender === "female") && (this.origin === 'South America' || this.origin === 'Asia')){
+      let averageLife = 74;
+      return averageLife - this.age;
+    } else if ((this.gender === "male") && (this.origin === 'South America' || this.origin === 'Asia')){
+      let averageLife = 70;
+      return averageLife - this.age;
+    } else if ((this.gender === "female") && (this.origin === 'Africa')){
+      let averageLife = 65;
+      return averageLife - this.age;
+    } else if ((this.gender === "male") && (this.origin === 'Africa')){
+      let averageLife = 61;
+      return averageLife - this.age;
+    } else {
+      let averageLife = 72;
+      return averageLife - this.age;
+    }
   }
 
 } //Calculator
