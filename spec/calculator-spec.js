@@ -28,4 +28,9 @@ describe('calculator', function() {
     var secondsAge = person.toSeconds();
     expect(person.ageInSeconds()).toBeGreaterThan(1198368000);
   });
+
+  it('returns age in Mercury years', function() {
+    var mercuryAge = person.mercuryAge();
+    expect(mercuryAge).toEqual(9.12);
+  });
 }); // describe calculator

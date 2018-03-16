@@ -25,11 +25,15 @@ export class Calculator{
     return birthSeconds;
   }
 
-  differenceInSeconds() {
+  ageInSeconds() {
     let date = this.currentDate;
     let birthday = this.birthDateInSeconds;
-    difference = Math.floor((date - birthday)/1000);
+    let difference = Math.floor((date - birthday)/1000);
     return difference;
+  }
+
+  mercuryAge() {
+
   }
 
 } //Calculator
