@@ -42,4 +42,9 @@ export class Calculator{
     return venusYears;
   }
 
+  marsAge() {
+
+    return 0;
+  }
+
 } //Calculator

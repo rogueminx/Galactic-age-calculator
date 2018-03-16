@@ -40,4 +40,10 @@ describe('calculator', function() {
     var venusAge = person.venusAge();
     expect(venusAge).toEqual(23.56);
   });
+
+  it('returns age in Mars years', function() {
+    person.findAge();
+    var marsAge = person.marsAge();
+    expect(marsAge).toEqual(71.44);
+  });
 }); // describe calculator
