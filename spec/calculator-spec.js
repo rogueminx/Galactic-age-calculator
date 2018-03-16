@@ -76,4 +76,9 @@ describe('calculator', function() {
     expect(person.marsYears()).toEqual(84);
   });
 
+  it('returns Jupiter years left', function() {
+    person.findAge();
+    person.earthLifeLeft();
+    expect(person.jupiterYears()).toEqual(533);
+  });
 }); // describe calculator
