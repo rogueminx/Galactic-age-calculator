@@ -1,6 +1,9 @@
 export class Calculator{
-  constructor(age) {
-    this.age = age
+  constructor(birthDate, gender, origin) {
+    this.birthDate = birthDate;
+    this.gender = gender;
+    this.origin = origin;
+    this.age = 0;
   }
 
   toSeconds() {
@@ -8,5 +11,9 @@ export class Calculator{
     return seconds;
   } // toSeconds
 
+  subtractDates(currentDate, birthDate) {
+    var dateArray = currentDate.split("/");
+    return dateArray;
+  }
 
 } //Calculator
