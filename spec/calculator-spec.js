@@ -53,9 +53,15 @@ describe('calculator', function() {
     expect(jupiterAge).toEqual(450);
   });
 
-  it('returns the average age youhave left on plant Earth.', function() {
+  it('returns the average age you have left on plant Earth.', function() {
     person.findAge();
     expect(person.earthLifeLeft()).toEqual(45);
+  });
+
+  it('returns Mercury years left', function() {
+    person.findAge();
+    person.earthLifeLeft();
+    expect(person.mercuryYears()).toEqual(10.8);
   });
 
 }); // describe calculator

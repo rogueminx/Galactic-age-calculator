@@ -6,6 +6,7 @@ export class Calculator{
     this.currentDate = 0;
     this.birthDateInSeconds = 0;
     this.age = 0;
+    this.yearsLeft =0;
   }
 
   findAge() {
@@ -55,26 +56,37 @@ export class Calculator{
   earthLifeLeft() {
     if ((this.gender === "female") && (this.origin === 'Europe' || this.origin === 'North America' || this.origin === 'Australia')) {
       let averageLife = 83;
-      return averageLife - this.age;
+      this.yearsLeft = averageLife - this.age;
+      return this.yearsLeft;
     } else if ((this.gender === "male") && (this.origin === 'Europe' || this.origin === 'North America' || this.origin === 'Australia')){
       let averageLife = 79;
-      return averageLife - this.age;
+      this.yearsLeft = averageLife - this.age;
+      return this.yearsLeft;
     } else if ((this.gender === "female") && (this.origin === 'South America' || this.origin === 'Asia')){
       let averageLife = 74;
-      return averageLife - this.age;
+      this.yearsLeft = averageLife - this.age;
+      return this.yearsLeft;
     } else if ((this.gender === "male") && (this.origin === 'South America' || this.origin === 'Asia')){
       let averageLife = 70;
-      return averageLife - this.age;
+      this.yearsLeft = averageLife - this.age;
+      return this.yearsLeft;
     } else if ((this.gender === "female") && (this.origin === 'Africa')){
       let averageLife = 65;
-      return averageLife - this.age;
+      this.yearsLeft = averageLife - this.age;
+      return this.yearsLeft;
     } else if ((this.gender === "male") && (this.origin === 'Africa')){
       let averageLife = 61;
-      return averageLife - this.age;
+      this.yearsLeft = averageLife - this.age;
+      return this.yearsLeft;
     } else {
       let averageLife = 72;
-      return averageLife - this.age;
+      this.yearsLeft = averageLife - this.age;
+      return this.yearsLeft;
     }
+  }
+
+  mercuryYears(){
+    return 0;
   }
 
 } //Calculator
