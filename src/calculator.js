@@ -96,7 +96,8 @@ export class Calculator{
   }
 
   marsYears(){
-    return 0;
+    let marsYears = Math.floor(this.yearsLeft * 1.88) ;
+    return marsYears;
   }
 
   jupiterYears(){
