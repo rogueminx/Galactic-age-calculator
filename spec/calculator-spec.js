@@ -13,13 +13,13 @@ describe('calculator', function() {
     expect(person.origin).toEqual('USA');
   });
 
-  it('returns age', function() {
+  it('returns age in years', function() {
     var age = person.findAge();
-    expect(age).toEqual(38)
+    expect(age).toEqual(38);
   });
 
-    // it('returns the exact age for an entered birth date', function() {
-    //   var difference = person.subtractDates("03/16/17", "03/16/80");
-    //   expect(difference).toEqual(1)
-    // });
+  it('returns age in seconds', function() {
+    var age = person.findAge();
+    expect(person.toSeconds()).toEqual(1198368000);
+  });
 }); // describe calculator

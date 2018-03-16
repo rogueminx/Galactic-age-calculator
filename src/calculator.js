@@ -12,7 +12,8 @@ export class Calculator{
     var birthdate = new Date(this.birthDate);
     var birthYear = birthdate.getFullYear();
     var age = (currentYear - birthYear);
-    return age;
+    this.age = age
+    return this.age;
   }
 
   toSeconds() {
