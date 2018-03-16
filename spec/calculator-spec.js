@@ -64,4 +64,10 @@ describe('calculator', function() {
     expect(person.mercuryYears()).toEqual(10);
   });
 
+  it('returns Mercury years left', function() {
+    person.findAge();
+    person.earthLifeLeft();
+    expect(person.venusYears()).toEqual(27);
+  });
+
 }); // describe calculator

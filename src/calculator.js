@@ -90,4 +90,17 @@ export class Calculator{
     return mercYears;
   }
 
+  venusYears(){
+    let venusYears = Math.floor(this.yearsLeft * .62) ;
+    return venusYears;
+  }
+
+  marsYears(){
+    return 0;
+  }
+
+  jupiterYears(){
+    return 0;
+  }
+
 } //Calculator
