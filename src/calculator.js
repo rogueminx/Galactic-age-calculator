@@ -43,8 +43,8 @@ export class Calculator{
   }
 
   marsAge() {
-
-    return 0;
+    let marsYears = this.age * 1.88;
+    return marsYears;
   }
 
 } //Calculator
