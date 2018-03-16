@@ -52,4 +52,8 @@ export class Calculator{
     return jupiterYears;
   }
 
+  earthLifeLeft() {
+    return 0;
+  }
+
 } //Calculator
