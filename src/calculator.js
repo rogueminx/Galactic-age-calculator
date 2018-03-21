@@ -35,22 +35,22 @@ export class Calculator{
   }
 
   mercuryAge() {
-    let mercuryYears = Math.floor(this.age * .24);
+    let mercuryYears = Math.floor(this.age / .24); // Question : should I have set this (.24) to a const variable?
     return mercuryYears;
   }
 
   venusAge() {
-    let venusYears = Math.floor(this.age * .62);
+    let venusYears = Math.floor(this.age / .62);
     return venusYears;
   }
 
   marsAge() {
-    let marsYears = Math.floor(this.age * 1.88);
+    let marsYears = Math.floor(this.age / 1.88);
     return marsYears;
   }
 
   jupiterAge() {
-    let jupiterYears = Math.floor(this.age * 11.86);
+    let jupiterYears = Math.floor(this.age / 11.86);
     return jupiterYears;
   }
 
@@ -115,22 +115,22 @@ export class Calculator{
   }
 
   mercuryYears(){
-    let mercYears = Math.floor(this.yearsLeft * .24) ;
+    let mercYears = Math.floor(this.yearsLeft / .24) ;
     return mercYears;
   }
 
   venusYears(){
-    let venusYears = Math.floor(this.yearsLeft * .62) ;
+    let venusYears = Math.floor(this.yearsLeft / .62) ;
     return venusYears;
   }
 
   marsYears(){
-    let marsYears = Math.floor(this.yearsLeft * 1.88) ;
+    let marsYears = Math.floor(this.yearsLeft / 1.88) ;
     return marsYears;
   }
 
   jupiterYears(){
-    let jupiterYears = Math.floor(this.yearsLeft * 11.86) ;
+    let jupiterYears = Math.floor(this.yearsLeft / 11.86) ;
     return jupiterYears;
   }
 

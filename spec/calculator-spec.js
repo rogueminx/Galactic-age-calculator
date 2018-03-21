@@ -1,7 +1,7 @@
 import { Calculator } from '../src/calculator.js';
 
 describe('calculator', function() {
-  var person;
+  let person;
 
   beforeEach(function() {
     person = new Calculator('03/15/1980', 'female', 'Europe');
@@ -14,7 +14,7 @@ describe('calculator', function() {
   });
 
   it('returns age in years', function() {
-    var age = person.findAge();
+    let age = person.findAge();
     expect(age).toEqual(38);
   });
 
@@ -31,26 +31,26 @@ describe('calculator', function() {
 
   it('returns age in Mercury years', function() {
     person.findAge();
-    var mercuryAge = person.mercuryAge();
-    expect(mercuryAge).toEqual(9);
+    let mercuryAge = person.mercuryAge();
+    expect(mercuryAge).toEqual(158);
   });
 
   it('returns age in Venus years', function() {
     person.findAge();
-    var venusAge = person.venusAge();
-    expect(venusAge).toEqual(23);
+    let venusAge = person.venusAge();
+    expect(venusAge).toEqual(61);
   });
 
   it('returns age in Mars years', function() {
     person.findAge();
-    var marsAge = person.marsAge();
-    expect(marsAge).toEqual(71);
+    let marsAge = person.marsAge();
+    expect(marsAge).toEqual(20);
   });
 
   it('returns age in Jupiter years', function() {
     person.findAge();
-    var jupiterAge = person.jupiterAge();
-    expect(jupiterAge).toEqual(450);
+    let jupiterAge = person.jupiterAge();
+    expect(jupiterAge).toEqual(3);
   });
 
   it('returns the average age you have left on plant Earth.', function() {
@@ -61,32 +61,32 @@ describe('calculator', function() {
   it('returns Mercury years left', function() {
     person.findAge();
     person.earthLifeLeft();
-    expect(person.mercuryYears()).toEqual(10);
+    expect(person.mercuryYears()).toEqual(187);
   });
 
   it('returns Mercury years left', function() {
     person.findAge();
     person.earthLifeLeft();
-    expect(person.venusYears()).toEqual(27);
+    expect(person.venusYears()).toEqual(72);
   });
 
   it('returns Mars years left', function() {
     person.findAge();
     person.earthLifeLeft();
-    expect(person.marsYears()).toEqual(84);
+    expect(person.marsYears()).toEqual(23);
   });
 
   it('returns Jupiter years left', function() {
     person.findAge();
     person.earthLifeLeft();
-    expect(person.jupiterYears()).toEqual(533);
+    expect(person.jupiterYears()).toEqual(3);
   });
 
   it('returns the number of years you have lived past the average life epectancy.', function() {
-    var oldPerson = new Calculator('03/15/1912', 'female', 'Europe')
-    var oldAge = oldPerson.findAge();
+    let oldPerson = new Calculator('03/15/1912', 'female', 'Europe')
+    let oldAge = oldPerson.findAge();
     expect(oldAge).toEqual(106);
-    var yearsLeft = oldPerson.earthLifeLeft();
+    let yearsLeft = oldPerson.earthLifeLeft();
     expect(yearsLeft).toEqual(23);
   });
 }); // describe calculator
